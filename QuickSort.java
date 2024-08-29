@@ -48,6 +48,7 @@ public class QuickSort {
         IntakeArray ia = new IntakeArray();
         int[] result = ia.intakeArray(size);
         input.close();
+        System.out.println("Sorted array: ");
         for(int n: result){
             System.out.print(n+" ");
         }
