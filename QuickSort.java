@@ -1,4 +1,4 @@
-//Insertion Sort Program in java
+//Quick Sort Program in java
 import java.util.Scanner;
 class QuickSortImplement{
     public int[] quicksort(int[] array,int left,int right){
