@@ -24,7 +24,7 @@ class LinkedListImplement{
     // printing the values in the list
     public void show(){
         Node node = head;
-        while(node.next!= null){
+        while(node!= null){
             System.out.println(node.data);
             node = node.next;
         }
