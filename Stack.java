@@ -27,6 +27,7 @@ class StackImplementation{
         }
         else{
             int poppedElement = stack[top];
+            stack[top] = 0;
             System.out.println("The popped Element is :"+poppedElement);
             top--;
         }
@@ -41,8 +42,8 @@ class StackImplementation{
     }
     public void showStack(){
         System.out.println("The data in the stack: ");
-        for(int i:stack){
-            System.out.println(i);
+        for(int i=0;i<=top;i++){
+            System.out.println(stack[i]);
         }
     }
 }
