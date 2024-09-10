@@ -50,6 +50,7 @@ class DynamicStackImplement{
             stack[top] = 0;
             System.out.println("The popped Element is :"+poppedElement);
             top--;
+            shrink();
         }
     }
     public void peek(){
@@ -82,6 +83,11 @@ public class DynamicStack {
         System.out.print("Enter the initial size of the stack: ");
         int size = input.nextInt();
         DynamicStackImplement dsi = new DynamicStackImplement(size);
+        System.out.println("Index to do Operations");
+        System.out.println("Enter -1 to print elements of stack and stop");
+        System.out.println("Enter 1 to push element into stack");
+        System.out.println("Enter 2 to pop element from stack");
+        System.out.println("Enter 3 retrive element from top");
         while(true){
             System.out.println("Enter the choice: ");
             int choice = input.nextInt();
